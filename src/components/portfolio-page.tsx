@@ -50,7 +50,7 @@ export function PortfolioPage() {
         <section className="px-6 py-12 max-w-4xl mx-auto">
           <div className="flex justify-between items-start">
             <div>
-              <h1 className="text-4xl font-bold mb-4">hi, i'm developer name 👋</h1>
+              <h1 className="text-4xl font-bold mb-4">hi, i'm developer name </h1>
               <p className="text-lg text-gray-400 mb-6">
                 Full-stack developer passionate about building great software
               </p>
