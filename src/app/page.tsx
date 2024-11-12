@@ -3,7 +3,6 @@
 import { Github, Linkedin, Mail, MapPin, FileText } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -36,9 +35,6 @@ export default function Component() {
             </Link>
             <Link href="#featured-projects" className="hover:text-primary transition-colors">
               projects
-            </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
-              blog
             </Link>
             <Link href="#" className="hover:text-primary transition-colors">
               contact
@@ -98,8 +94,8 @@ export default function Component() {
                   <Image
                     src="boars-head.svg"
                     alt="Boar's Head Logo"
-                    width={32}
-                    height={32}
+                    width={80}
+                    height={80}
                     className="rounded-full"
                   />
                 </div>
@@ -140,8 +136,8 @@ export default function Component() {
                   <Image
                     src="Loyola-maryland.svg"
                     alt="Loyola University Maryland logo"
-                    width={32}
-                    height={32}
+                    width={80}
+                    height={80}
                     className="rounded-full"
                   />
                 </div>
@@ -161,8 +157,8 @@ export default function Component() {
                   <Image
                     src="newcastle.svg"
                     alt="Newcastle University logo"
-                    width={32}
-                    height={32}
+                    width={80}
+                    height={80}
                     className="rounded-full"
                   />
                 </div>
@@ -208,50 +204,54 @@ export default function Component() {
             </Link> */}
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-  <Card className="bg-gray-900 border-gray-800">
-    <CardHeader>
-      <Image
-        src="/project1-image.svg"
-        alt="Project 1 preview"
-        width={400}
-        height={200}
-        className="rounded-lg object-cover w-full"
-      />
-    </CardHeader>
-    <CardContent>
-      <CardTitle className="mb-2">SportLogicZone</CardTitle>
-      <p className="text-gray-400">
-      Created SportLogicZone, a data-driven platform providing fantasy rankings, arbitrage opportunities, and high EV bets using analytics and modeling.
-      </p>
-    </CardContent>
-    <CardFooter className="flex flex-wrap gap-2">
-      <Badge variant="outline">React</Badge>
-      <Badge variant="outline">Node.js</Badge>
-      <Badge variant="outline">PostgreSQL</Badge>
-    </CardFooter>
-  </Card>
+  <Link href="https://sportlogiczone.vercel.app/" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <Image
+          src="SportLogicZone.svg"
+          alt="Project 1 preview"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">SportLogicZone</CardTitle>
+        <p className="text-gray-400">
+          Created SportLogicZone, a data-driven platform providing fantasy rankings, arbitrage opportunities, and high EV bets using analytics and modeling.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">React</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Node.js</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">PostgreSQL</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
 
-  <Card className="bg-gray-900 border-gray-800">
-    <CardHeader>
-      <Image
-        src="/project2-image.svg"
-        alt="Project 2 preview"
-        width={400}
-        height={200}
-        className="rounded-lg object-cover w-full"
-      />
-    </CardHeader>
-    <CardContent>
-      <CardTitle className="mb-2">JTDPortfolio</CardTitle>
-      <p className="text-gray-400">
-        A modern portfolio built with Next.js and Tailwind CSS, showcasing my work with a clean, responsive design.
-      </p>
-    </CardContent>
-    <CardFooter className="flex flex-wrap gap-2">
-      <Badge variant="outline">Next.js</Badge>
-      <Badge variant="outline">Tailwind</Badge>
-    </CardFooter>
-  </Card>
+  <Link href="https://jtdportfolio.vercel.app/" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <Image
+          src="placeholder.svg"
+          alt="Project 1 preview"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">JTD Portfolio</CardTitle>
+        <p className="text-gray-400">
+          A modern portfolio built with Next.js and Tailwind CSS, showcasing my work with a clean, responsive design.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Next.Js</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Tailwind</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
 </div>
 
           
