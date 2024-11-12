@@ -26,7 +26,7 @@ export default function Component() {
   ]
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+      <div className="min-h-screen bg-black text-white flex flex-col">
       {/* Sticky Header/Navigation */}
       <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800">
         <div className="max-w-4xl mx-auto px-6">
@@ -52,11 +52,7 @@ export default function Component() {
         <section className="px-6 py-12 max-w-4xl mx-auto">
           <div className="flex justify-between items-start">
             <div>
-<<<<<<< HEAD
               <h1 className="text-4xl font-bold mb-4">Hi, i&apos;m Jack Doherty 👋</h1>
-=======
-              <h1 className="text-4xl font-bold mb-4">hi, i&apos;m developer name </h1>
->>>>>>> e1f6b9f57cfd73b13b5e0b327c3f6265196ef63d
               <p className="text-lg text-gray-400 mb-6">
                 Full-stack developer passionate about building great software
               </p>
