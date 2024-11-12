@@ -232,7 +232,7 @@ export default function Component() {
 
   <Card className="bg-gray-900 border-gray-800">
     <CardHeader>
-      <img
+      <Image
         src="#"
         alt="JTD Portfolio"
         width={400}
