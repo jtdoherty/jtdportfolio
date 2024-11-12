@@ -210,7 +210,7 @@ export default function Component() {
   <Card className="bg-gray-900 border-gray-800">
     <CardHeader>
       <Image
-        src="/project1-image.svg"
+        src="SportLogicZone.svg"
         alt="Project 1 preview"
         width={400}
         height={200}
@@ -223,18 +223,18 @@ export default function Component() {
       Created SportLogicZone, a data-driven platform providing fantasy rankings, arbitrage opportunities, and high EV bets using analytics and modeling.
       </p>
     </CardContent>
-    <CardFooter className="flex flex-wrap gap-2">
-      <Badge variant="outline">React</Badge>
-      <Badge variant="outline">Node.js</Badge>
-      <Badge variant="outline">PostgreSQL</Badge>
+    <CardFooter className="flex flex-wrap gap-4">
+      <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">React</Badge>
+      <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Node.js</Badge>
+      <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">PostgreSQL</Badge>
     </CardFooter>
   </Card>
 
   <Card className="bg-gray-900 border-gray-800">
     <CardHeader>
       <Image
-        src="/project2-image.svg"
-        alt="Project 2 preview"
+        src="#"
+        alt="JTD Portfolio"
         width={400}
         height={200}
         className="rounded-lg object-cover w-full"
@@ -246,9 +246,9 @@ export default function Component() {
         A modern portfolio built with Next.js and Tailwind CSS, showcasing my work with a clean, responsive design.
       </p>
     </CardContent>
-    <CardFooter className="flex flex-wrap gap-2">
-      <Badge variant="outline">Next.js</Badge>
-      <Badge variant="outline">Tailwind</Badge>
+    <CardFooter className="flex flex-wrap gap-4">
+      <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Next.js</Badge>
+      <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Tailwind</Badge>
     </CardFooter>
   </Card>
 </div>
