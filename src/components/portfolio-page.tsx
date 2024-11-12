@@ -3,7 +3,6 @@
 import { Github, Linkedin, Mail, MapPin, FileText } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
-
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
@@ -11,16 +10,19 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 export default function Component() {
   const skills = [
-    { name: "React", logo: "/placeholder.svg?text=React" },
-    { name: "Node.js", logo: "/placeholder.svg?text=Node.js" },
-    { name: "Git", logo: "/placeholder.svg?text=Git" },
-    { name: "Docker", logo: "/placeholder.svg?text=Docker" },
-    { name: "AWS", logo: "/placeholder.svg?text=AWS" },
-    { name: "MongoDB", logo: "/placeholder.svg?text=MongoDB" },
-    { name: "PostgreSQL", logo: "/placeholder.svg?text=PostgreSQL" },
-    { name: "Express.js", logo: "/placeholder.svg?text=Express.js" },
-    { name: "Django", logo: "/placeholder.svg?text=Django" },
-    { name: "TypeScript", logo: "/placeholder.svg?text=TypeScript" },
+    { name: "Python", logo: "python.svg" },
+    { name: "Javascript", logo: "javascript.svg" },
+    { name: "Typescript", logo: "typescript.svg" },
+    { name: "React", logo: "react.svg" },
+    { name: "Node.js", logo: "node-js.svg" },
+    { name: "PostgreSQL", logo: "postgresql.svg" },
+    { name: "MongoDB", logo: "mongo.svg" },
+    { name: "Git", logo: "git.svg" },
+    { name: "AWS", logo: "aws.svg" },
+    { name: "Django", logo: "django.svg" },
+    { name: "Tailwind", logo: "tailwind.svg" },
+    { name: "Numpy", logo: "numpy.svg" },
+    { name: "Pandas", logo: "pandas.svg" },
   ]
 
   return (
@@ -32,7 +34,7 @@ export default function Component() {
             <Link href="#" className="hover:text-primary transition-colors">
               home
             </Link>
-            <Link href="#" className="hover:text-primary transition-colors">
+            <Link href="#featured-projects" className="hover:text-primary transition-colors">
               projects
             </Link>
             <Link href="#" className="hover:text-primary transition-colors">
@@ -50,36 +52,36 @@ export default function Component() {
         <section className="px-6 py-12 max-w-4xl mx-auto">
           <div className="flex justify-between items-start">
             <div>
-<<<<<<< HEAD
-              <h1 className="text-4xl font-bold mb-4">hi, i&apos;m developer name 👋</h1>
-=======
-              <h1 className="text-4xl font-bold mb-4">hi, i'm developer name </h1>
->>>>>>> e1f6b9f57cfd73b13b5e0b327c3f6265196ef63d
+              <h1 className="text-4xl font-bold mb-4">Hi, i&apos;m Jack Doherty 👋</h1>
               <p className="text-lg text-gray-400 mb-6">
                 Full-stack developer passionate about building great software
               </p>
               <div className="flex items-center gap-2 text-gray-400 mb-6">
                 <MapPin className="w-4 h-4" />
-                <span>Your Location</span>
+                <span>New York, New York</span>
               </div>
               <div className="flex gap-4">
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="https://github.com/jtdoherty" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <Github className="w-6 h-6" />
                 </Link>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="https://www.linkedin.com/in/-jackdoherty/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-6 h-6" />
                 </Link>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="mailto:jtdoherty1105@gmail.com" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <Mail className="w-6 h-6" />
                 </Link>
-                <Link href="#" className="hover:text-primary transition-colors">
+                <Link href="/Jack_Thomas_Doherty_Resume.pdf" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-6 h-6" />
                 </Link>
               </div>
             </div>
-            <Button variant="outline" className="border-primary">
-              Resume
-            </Button>
+            <img
+                    src="Jack.jpg"
+                    alt="Jack"
+                    width={125}
+                    height={125}
+                    className="rounded-full"
+                  />
           </div>
         </section>
 
@@ -94,46 +96,41 @@ export default function Component() {
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shrink-0">
                   <Image
-                    src="/placeholder.svg"
-                    alt="DBS Bank logo"
+                    src="boars-head.svg"
+                    alt="Boar's Head Logo"
                     width={32}
                     height={32}
                     className="rounded-full"
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold">DBS Bank</h3>
-                  <p className="text-gray-400">Graduate Associate (SEED Programme)</p>
-                  <p className="text-sm text-gray-500">Jul 2023 - Present</p>
+                  <h3 className="font-semibold">Boar's Head Provisions</h3>
+                  <p className="text-gray-400">Business Analyst Intern</p>
+                  <p className="text-sm text-gray-500">June 2023 - August 2023</p>
                   <ul className="mt-2 text-gray-400 list-disc list-inside">
-                    <li>Developed the Java backend for a bank account servicing process with multiple channel integrations using Activiti workflow</li>
-                    <li>Built a custom database migration tool using Python and MariaDB and facilitated the migration of 1000+ processes from a vendor platform</li>
+                    <li>Programmed and deployed a Python-based data migration pipeline on AWS, achieving a 50% reduction in transfer time for 100+ terabytes of critical business data.</li>
+                    <li>Centralized a SQL database infrastructure on AWS, enhancing data accessibility and security for 50+ stakeholders, resulting in a 30% improvement in query performance across the organization.</li>
                   </ul>
                 </div>
               </div>
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shrink-0">
                   <Image
-                    src="/placeholder.svg"
-                    alt="SIT logo"
+                    src="north-hempstead.svg"
+                    alt="North Hempstead Logo"
                     width={32}
                     height={32}
                     className="rounded-full"
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Singapore Institute of Technology</h3>
-                  <p className="text-gray-400">Software Developer (Contract)</p>
-                  <p className="text-sm text-gray-500">Apr 2023 - Jun 2023</p>
+                  <h3 className="font-semibold">North Hempstead Country Club</h3>
+                  <p className="text-gray-400">Caddie</p>
+                  <p className="text-sm text-gray-500">May 2022 - Present</p>
                   <ul className="mt-2 text-gray-400 list-disc list-inside">
-                    <li>Built NFTVue, a NFT gallery website that allows students to connect their crypto wallets to view and verify their school event-issued NFTs</li>
-                    <li>Worked on DemoConstruct, a full-stack web application (React + Python) that uses Meshroom to reconstruct 3D models from captured images</li>
+                    <li>Improved golfers' performance through strategic, data-informed guidance and real-time decision-making, showcasing strong analytical and problem-solving skills.</li>
+                    <li>Enhanced client satisfaction by delivering precise recommendations, clear communication, and premium, personalized service, building lasting client relationships.</li>
                   </ul>
-                  <div className="mt-2">
-                    <Badge variant="secondary" className="mr-2">
-                      NFTVue
-                    </Badge>
-                  </div>
                 </div>
               </div>
             </TabsContent>
@@ -141,28 +138,42 @@ export default function Component() {
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shrink-0">
                   <Image
-                    src="/placeholder.svg"
-                    alt="Digipen logo"
+                    src="Loyola-maryland.svg"
+                    alt="Loyola University Maryland logo"
                     width={32}
                     height={32}
                     className="rounded-full"
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Digipen Institute of Technology Singapore</h3>
-                  <p className="text-gray-400">BS in Computer Science in Real-Time Interactive Simulation</p>
-                  <p className="text-sm text-gray-500">Sep 2019 - Apr 2023</p>
+                  <h3 className="font-semibold">Loyola University Maryland</h3>
+                  <p className="text-gray-400">Bachelor of Information Systems & Data Analytics</p>
+                  <p className="text-sm text-gray-500">August 2020 - May 2024</p>
                   <ul className="mt-2 text-gray-400 list-disc list-inside">
-                    <li>Graduated with a Minor in Mathematics</li>
-                    <li>President of Digipen Student Management Committee for freshman year</li>
+                    <li>Captain of Club Basketball Team leading the team for two consecutive years</li>
                     <li>3-time recipient of the Dean's Honor List</li>
+                    <li>Courses: Business Intelligence and Data Mining, Data Management and Database Systems, Cyber Security and Networks</li>
                   </ul>
-                  <div className="mt-2">
-                    <Badge variant="secondary" className="mr-2">
-                      Final Year Project
-                    </Badge>
-                    <Badge variant="secondary">2nd Year Project</Badge>
-                  </div>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shrink-0">
+                  <Image
+                    src="newcastle.svg"
+                    alt="Newcastle University logo"
+                    width={32}
+                    height={32}
+                    className="rounded-full"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Newcastle University</h3>
+                  <p className="text-gray-400">Combined Honours</p>
+                  <p className="text-sm text-gray-500">January 2023 - May 2023</p>
+                  <ul className="mt-2 text-gray-400 list-disc list-inside">
+                    <li>Study abroad semester</li>
+                    <li>Courses: Global Business Environment, Key Concepts in International Politics, World Philosophies</li>
+                  </ul>
                 </div>
               </div>
             </TabsContent>
@@ -189,47 +200,70 @@ export default function Component() {
         </section>
 
         {/* Projects Section */}
-        <section className="px-6 py-12 max-w-4xl mx-auto">
+        <section id="featured-projects" className="px-6 py-12 max-w-4xl mx-auto">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-2xl font-bold">Featured Projects</h2>
-            <Link href="#" className="text-primary hover:underline">
-              view more →
-            </Link>
+            {/*  <Link href="#" className="text-primary hover:underline">
+              view more → 
+            </Link> */}
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            {[1, 2].map((item) => (
-              <Card key={item} className="bg-gray-900 border-gray-800">
-                <CardHeader>
-                  <Image
-                    src="/placeholder.svg"
-                    alt="Project preview"
-                    width={400}
-                    height={200}
-                    className="rounded-lg object-cover w-full"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="mb-2">Project Name</CardTitle>
-                  <p className="text-gray-400">
-                    A brief description of the project and what technologies were used to build it.
-                  </p>
-                </CardContent>
-                <CardFooter className="flex flex-wrap gap-2">
-                  <Badge variant="outline">React</Badge>
-                  <Badge variant="outline">Next.js</Badge>
-                  <Badge variant="outline">TypeScript</Badge>
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
+  <Card className="bg-gray-900 border-gray-800">
+    <CardHeader>
+      <Image
+        src="/project1-image.svg"
+        alt="Project 1 preview"
+        width={400}
+        height={200}
+        className="rounded-lg object-cover w-full"
+      />
+    </CardHeader>
+    <CardContent>
+      <CardTitle className="mb-2">SportLogicZone</CardTitle>
+      <p className="text-gray-400">
+      Created SportLogicZone, a data-driven platform providing fantasy rankings, arbitrage opportunities, and high EV bets using analytics and modeling.
+      </p>
+    </CardContent>
+    <CardFooter className="flex flex-wrap gap-2">
+      <Badge variant="outline">React</Badge>
+      <Badge variant="outline">Node.js</Badge>
+      <Badge variant="outline">PostgreSQL</Badge>
+    </CardFooter>
+  </Card>
+
+  <Card className="bg-gray-900 border-gray-800">
+    <CardHeader>
+      <Image
+        src="/project2-image.svg"
+        alt="Project 2 preview"
+        width={400}
+        height={200}
+        className="rounded-lg object-cover w-full"
+      />
+    </CardHeader>
+    <CardContent>
+      <CardTitle className="mb-2">JTDPortfolio</CardTitle>
+      <p className="text-gray-400">
+        A modern portfolio built with Next.js and Tailwind CSS, showcasing my work with a clean, responsive design.
+      </p>
+    </CardContent>
+    <CardFooter className="flex flex-wrap gap-2">
+      <Badge variant="outline">Next.js</Badge>
+      <Badge variant="outline">Tailwind</Badge>
+    </CardFooter>
+  </Card>
+</div>
+
+          
         </section>
       </main>
+      
 
       {/* Footer */}
       <footer className="bg-gray-900 border-t border-gray-800 mt-12">
         <div className="max-w-4xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <h2 className="text-2xl font-bold mb-2">Developer Name</h2>
+            <h2 className="text-2xl font-bold mb-2">Jack Doherty</h2>
             <p className="text-gray-400">Full-stack Developer</p>
           </div>
           <div className="flex gap-4">
@@ -245,7 +279,7 @@ export default function Component() {
           </div>
         </div>
         <div className="text-center py-4 text-sm text-gray-500 border-t border-gray-800">
-          © {new Date().getFullYear()} Developer Name. All rights reserved.
+          © {new Date().getFullYear()} Jack Doherty. All rights reserved.
         </div>
       </footer>
     </div>
