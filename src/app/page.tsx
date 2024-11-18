@@ -331,6 +331,6 @@ export default function Component() {
           © {new Date().getFullYear()} Jack Doherty. All rights reserved.
         </div>
       </footer>
-    </div>
+    </div
   )
 }
