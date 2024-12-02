@@ -252,6 +252,55 @@ export default function Component() {
       </CardFooter>
     </Card>
   </Link>
+
+  <Link href="https://github.com/jtdoherty/MSFT-Machine-Learning" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <Image
+          src="placeholder.svg"
+          alt="MSFT Machine Learning"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">MSFT Machine Learning</CardTitle>
+        <p className="text-gray-400">
+        This project builds a Random Forest Classifier to predict daily Microsoft stock price movements using historical data from Yahoo Finance, including features like closing price, volume, and rolling averages, with an initial accuracy rate of ~60% through backtesting.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Python</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Pandas</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Scikit-Learn</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
+
+  <Link href="https://github.com/jtdoherty/Fantasy-Football-Player-Props" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <Image
+          src="placeholder.svg"
+          alt="Fantasy Football Player Props"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">Data Scraping Fantasy Football Player Props</CardTitle>
+        <p className="text-gray-400">
+          Data scraping in Python with pandas and BeautifulSoup to get player data for Fantasy Football Predictions.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Python</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Pandas</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
 </div>
 
           
