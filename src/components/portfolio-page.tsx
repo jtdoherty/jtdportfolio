@@ -50,7 +50,7 @@ export default function Component() {
             <div>
               <h1 className="text-4xl font-bold mb-4">Hi, i&apos;m Jack Doherty 👋</h1>
               <p className="text-lg text-gray-400 mb-6">
-                Full-stack developer passionate about building great software
+               Full-stack developer driven to shape the future with impactful, meaningful software.
               </p>
               <div className="flex items-center gap-2 text-gray-400 mb-6">
                 <MapPin className="w-4 h-4" />
@@ -92,20 +92,21 @@ export default function Component() {
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shrink-0">
                   <Image
-                    src="boars-head.svg"
-                    alt="Boar's Head Logo"
+                    src="football.svg"
+                    alt="Redshirt Fantasy Logo"
                     width={80}
                     height={80}
                     className="rounded-full"
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Boar's Head Provisions</h3>
-                  <p className="text-gray-400">Business Analyst Intern</p>
-                  <p className="text-sm text-gray-500">June 2023 - August 2023</p>
+                  <h3 className="font-semibold">Redshirt Fantasy</h3>
+                  <p className="text-gray-400">Software Engineer</p>
+                  <p className="text-sm text-gray-500">May 2024 - Present</p>
                   <ul className="mt-2 text-gray-400 list-disc list-inside">
-                    <li>Programmed and deployed a Python-based data migration pipeline on AWS, achieving a 50% reduction in transfer time for 100+ terabytes of critical business data.</li>
-                    <li>Centralized a SQL database infrastructure on AWS, enhancing data accessibility and security for 50+ stakeholders, resulting in a 30% improvement in query performance across the organization.</li>
+                    <li>Architected and developed comprehensive fantasy sports platform through full-stack implementation using React, Express.js, and MySQL, incorporating real-time sports data integration via SportaData.io API</li>
+                    <li>Engineered secure user authentication system and scalable database architecture supporting complex fantasy sports operations including multi-player drafts, dynamic scoring, and automated player trading functionality.</li>
+                    <li>Spearheaded end-to-end development of customizable league management system featuring commissioner controls, automated draft scheduling, and configurable league parameters, driving platform engagement through intuitive UI/UX design.</li>
                   </ul>
                 </div>
               </div>
@@ -204,107 +205,112 @@ export default function Component() {
             </Link> */}
           </div>
           <div className="grid md:grid-cols-2 gap-6">
-            <Link href="https://sportslogiczone.vercel.app/" passHref>
-              <Card className="bg-gray-900 border-gray-800 cursor-pointer">
-                <CardHeader>
-                  <Image
-                    src="SportsLogicZone.svg"
-                    alt="Sports Logic Zone"
-                    width={400}
-                    height={200}
-                    className="rounded-lg object-cover w-full"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="mb-2">SportLogicZone</CardTitle>
-                  <p className="text-gray-400">
-                    Created SportsLogicZone, a data-driven platform providing fantasy rankings, arbitrage opportunities, and high EV bets using analytics and modeling.
-                  </p>
-                </CardContent>
-                <CardFooter className="flex flex-wrap gap-4">
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">React</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Express</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">MongoDB</Badge>
-                </CardFooter>
-              </Card>
-            </Link>
+          <Link href="https://github.com/jtdoherty/Olympics-ML-Predictions" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <img
+          src="olympicsML.png"
+          alt="MSFT Machine Learning"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">Olmpics Machine Learning Predictions</CardTitle>
+        <p className="text-gray-400">
+          Used machine learning through scikit-learn to predict the outcome of countries Olympic metals.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Pandas</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">NumPy</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Matplotlib</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Scikit-Learn</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
 
-            <Link href="https://github.com/jtdoherty/MSFT-Machine-Learning" passHref>
-              <Card className="bg-gray-900 border-gray-800 cursor-pointer">
-                <CardHeader>
-                  <Image
-                    src="placeholder.svg"
-                    alt="Microsoft Machine Learning"
-                    width={400}
-                    height={200}
-                    className="rounded-lg object-cover w-full"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="mb-2">Stock Machine Learning</CardTitle>
-                  <p className="text-gray-400">
-                    This project builds a Random Forest Classifier to predict daily Microsoft stock price movements using historical data from Yahoo Finance, including features like closing price, volume, and rolling averages, with an initial accuracy rate of ~60% through backtesting.
-                  </p>
-                </CardContent>
-                <CardFooter className="flex flex-wrap gap-4">
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Pandas</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">NumPy</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Scikit-Learn</Badge>
-                </CardFooter>
-              </Card>
-            </Link>
+  <Link href="https://sportslogiczone.vercel.app/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <Image
+          src="SportLogicZone.svg"
+          alt="Sports Logic Zone"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">SportsLogicZone</CardTitle>
+        <p className="text-gray-400">
+          Created SportsLogicZone, a data-driven platform providing fantasy rankings, arbitrage opportunities, and high EV bets using analytics and modeling.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">React</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Express</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">MongoDB</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
 
-            <Link href="https://github.com/jtdoherty/Olympics-ML-Predictions" passHref>
-              <Card className="bg-gray-900 border-gray-800 cursor-pointer">
-                <CardHeader>
-                  <Image
-                    src="placeholder.svg"
-                    alt="MSFT Machine Learning"
-                    width={400}
-                    height={200}
-                    className="rounded-lg object-cover w-full"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="mb-2">Olmpics Machine Learning Predictions</CardTitle>
-                  <p className="text-gray-400">
-                    Used machine learning through scikit-learn to predict the outcome of countries Olympic metals.
-                  </p>
-                </CardContent>
-                <CardFooter className="flex flex-wrap gap-4">
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Pandas</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">NumPy</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Matplotlib</Badge>
-                </CardFooter>
-              </Card>
-            </Link>
+  <Link href="https://github.com/jtdoherty/MSFT-Machine-Learning" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <img
+          src="msftMLrepo.png"
+          alt="Microsoft Machine Learning"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">Stock Machine Learning</CardTitle>
+        <p className="text-gray-400">
+          This project builds a Random Forest Classifier to predict daily Microsoft stock price movements using historical data from Yahoo Finance, including features like closing price, volume, and rolling averages, with an initial accuracy rate of ~60% through backtesting.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Pandas</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">NumPy</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Scikit-Learn</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
 
-            <Link href="https://github.com/jtdoherty/Fantasy-Football-Player-Props" passHref>
-              <Card className="bg-gray-900 border-gray-800 cursor-pointer">
-                <CardHeader>
-                  <Image
-                    src="placeholder.svg"
-                    alt="Fantasy Football Player Props"
-                    width={400}
-                    height={200}
-                    className="rounded-lg object-cover w-full"
-                  />
-                </CardHeader>
-                <CardContent>
-                  <CardTitle className="mb-2">Data Scraping Fantasy Football Player Props</CardTitle>
-                  <p className="text-gray-400">
-                    Data scraping in Python with pandas and BeautifulSoup to get player data for Fantasy Football Predictions.
-                  </p>
-                </CardContent>
-                <CardFooter className="flex flex-wrap gap-4">
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Python</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Pandas</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">NumPy</Badge>
-                  <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Beautiful Soup</Badge>
-                </CardFooter>
-              </Card>
-            </Link>
-          </div>
+  
+
+  <Link href="https://github.com/jtdoherty/Fantasy-Football-Player-Props" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <img
+          src="fantasyfootball.png"
+          alt="Fantasy Football Player Props"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">Data Scraping Fantasy Football Player Props</CardTitle>
+        <p className="text-gray-400">
+          Data scraping in Python with pandas and BeautifulSoup to get player data for Fantasy Football Predictions.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Python</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Pandas</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">NumPy</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Beautiful Soup</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
+</div>
+
+          
         </section>
       </main>
       
