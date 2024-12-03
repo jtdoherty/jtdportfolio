@@ -6,6 +6,7 @@ import Link from "next/link"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Analytics } from "@vercel/analytics/react"
 
 export default function Component() {
   const skills = [
@@ -26,6 +27,7 @@ export default function Component() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
+      <Analytics />
       {/* Sticky Header/Navigation */}
       <header className="sticky top-0 z-50 bg-black/80 backdrop-blur-sm border-b border-gray-800">
         <div className="max-w-4xl mx-auto px-6">
