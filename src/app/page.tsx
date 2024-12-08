@@ -1,4 +1,4 @@
-"use client"1
+"use client"11
 
 import { Github, Linkedin, Mail, MapPin, FileText } from "lucide-react"
 import Image from "next/image"
