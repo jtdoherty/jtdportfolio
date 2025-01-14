@@ -24,7 +24,7 @@ export default function Component() {
     { name: "Numpy", logo: "numpy.svg" },
     { name: "Pandas", logo: "pandas.svg" },
     { name: "Java", logo: "java.svg" },
-    { name: "Spring Boot", logo: "Spring_Boot.svg" },
+    { name: "Spring Boot", logo: "spring-boot.svg" },
   ]
 
   return (
