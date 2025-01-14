@@ -68,7 +68,7 @@ export default function Component() {
                 <Link href="mailto:jtdoherty1105@gmail.com" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <Mail className="w-6 h-6" />
                 </Link>
-                <Link href="/Jack_Thomas_Doherty_Resume.pdf" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+                <Link href="public/Jack_Thomas_Doherty_Resume.pdf" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-6 h-6" />
                 </Link>
               </div>
