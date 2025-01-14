@@ -23,6 +23,8 @@ export default function Component() {
     { name: "Tailwind", logo: "tailwind.svg" },
     { name: "Numpy", logo: "numpy.svg" },
     { name: "Pandas", logo: "pandas.svg" },
+    { name: "Java", logo: "java.svg" },
+    { name: "Spring Boot", logo: "Spring_Boot.svg" },
   ]
 
   return (
