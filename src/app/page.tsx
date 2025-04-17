@@ -13,18 +13,20 @@ export default function Component() {
     { name: "Python", logo: "python.svg" },
     { name: "Javascript", logo: "javascript.svg" },
     { name: "Typescript", logo: "typescript.svg" },
+    { name: "Solidity", logo: "Solidity-Logo.svg" },
+    { name: "SQL", logo: "sql-logo.svg" },
+    { name: "Java", logo: "java.svg" },
     { name: "React", logo: "react.svg" },
     { name: "Node.js", logo: "node-js.svg" },
+    { name: "Spring Boot", logo: "spring-boot.svg" },
+    { name: "Django", logo: "django.svg" },
     { name: "PostgreSQL", logo: "postgresql.svg" },
     { name: "MongoDB", logo: "mongo.svg" },
     { name: "Git", logo: "git.svg" },
     { name: "AWS", logo: "aws.svg" },
-    { name: "Django", logo: "django.svg" },
     { name: "Tailwind", logo: "tailwind.svg" },
-    { name: "Numpy", logo: "numpy.svg" },
-    { name: "Pandas", logo: "pandas.svg" },
-    { name: "Java", logo: "java.svg" },
-    { name: "Spring Boot", logo: "spring-boot.svg" },
+    
+    
   ]
 
   return (
@@ -52,9 +54,9 @@ export default function Component() {
         <section className="px-6 py-12 max-w-4xl mx-auto">
           <div className="flex justify-between items-start">
             <div>
-              <h1 className="text-4xl font-bold mb-4">Hi, i&apos;m Jack Doherty 👋</h1>
+              <h1 className="text-4xl font-bold mb-4">Hi, I&apos;m Jack Doherty 👋</h1>
               <p className="text-lg text-gray-400 mb-6">
-               Full-stack Developer | Always Learning
+               Software Engineer
               </p>
               <div className="flex items-center gap-2 text-gray-400 mb-6">
                 <MapPin className="w-4 h-4" />
@@ -70,7 +72,7 @@ export default function Component() {
                 <Link href="mailto:jtdoherty1105@gmail.com" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <Mail className="w-6 h-6" />
                 </Link>
-                <Link href="public/Jack_Thomas_Doherty_Resume.pdf" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+                <Link href="public\Jack_Doherty_Resume.pdf" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-6 h-6" />
                 </Link>
               </div>
@@ -96,21 +98,42 @@ export default function Component() {
               <div className="flex gap-4">
                 <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shrink-0">
                   <Image
-                    src="football.svg"
-                    alt="Redshirt Fantasy Logo"
+                    src="revature_logo.svg"
+                    alt="Logo"
                     width={80}
                     height={80}
                     className="rounded-full"
                   />
                 </div>
                 <div>
-                  <h3 className="font-semibold">Redshirt Fantasy</h3>
-                  <p className="text-gray-400">Software Engineer</p>
-                  <p className="text-sm text-gray-500">May 2024 - Present</p>
+                  <h3 className="font-semibold">Revature</h3>
+                  <p className="text-gray-400">Software Engineer Trainee</p>
+                  <p className="text-sm text-gray-500">March 2025 - Present</p>
                   <ul className="mt-2 text-gray-400 list-disc list-inside">
-                    <li>Architected and developed comprehensive fantasy sports platform through full-stack implementation using React, Express.js, and MySQL, incorporating real-time sports data integration via SportaData.io API</li>
-                    <li>Engineered secure user authentication system and scalable database architecture supporting complex fantasy sports operations including multi-player drafts, dynamic scoring, and automated player trading functionality.</li>
-                    <li>Spearheaded end-to-end development of customizable league management system featuring commissioner controls, automated draft scheduling, and configurable league parameters, driving platform engagement through intuitive UI/UX design.</li>
+                    <li>Actively training in a rigorous 12 week Java development program, mastering Spring Framework, Hibernate, and RESTful API development to build scalable enterprise applications.</li>
+                    <li>Developing hands-on proficiency in object-oriented programming, data structures, and algorithms through real-world Java projects.</li>
+                    <li>Collaborating in agile teams to design, code, and test full-stack applications using Java, SQL, and front-end technologies like HTML, CSS, and JavaScript, ensuring robust functionality and user experience.</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center shrink-0">
+                  <Image
+                    src="football.svg"
+                    alt="Logo"
+                    width={80}
+                    height={80}
+                    className="rounded-full"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-semibold">Sports Logic Zone</h3>
+                  <p className="text-gray-400">Software Engineer & Data Analyst (Contract)</p>
+                  <p className="text-sm text-gray-500">June 2024 - January 2025</p>
+                  <ul className="mt-2 text-gray-400 list-disc list-inside">
+                    <li>Developed and deployed a full-stack web application providing data-driven sports analytics and strategic tools, serving over 100 users with real-time insights.</li>
+                    <li>Implemented automated data processing pipelines with Node.js and Express.js, analyzing win probabilities by processing over 10,000 daily odds entries. Utilized efficient algorithms to deliver actionable insights via interactive React visualizations.</li>
+                    <li>Utilized MongoDB for scalable data storage and management. Enhanced application reliability by integrating CI/CD pipelines with GitHub Actions, ensuring seamless updates.</li>
                   </ul>
                 </div>
               </div>
@@ -129,8 +152,10 @@ export default function Component() {
                   <p className="text-gray-400">Business Analyst Intern</p>
                   <p className="text-sm text-gray-500">June 2023 - August 2023</p>
                   <ul className="mt-2 text-gray-400 list-disc list-inside">
-                    <li>Programmed and deployed a Python-based data migration pipeline on AWS, achieving a 50% reduction in transfer time for 100+ terabytes of critical business data.</li>
-                    <li>Centralized a SQL database infrastructure on AWS, enhancing data accessibility and security for 50+ stakeholders, resulting in a 30% improvement in query performance across the organization.</li>
+                    <li>Developed Python scripts to process 100+ data codes from a data lake, creating an efficient pipeline for analysis that enhanced decision-making processes.</li>
+                    <li>Built a Python-based document automation pipeline on Azure, reducing wiki creation time by 95%, showcasing initiative and systems optimization skills.</li>
+                    <li>Analyzed trends using SQL and Excel, centralizing codebase on Azure for 10+ partners, improving collaboration and saving 50+ hours weekly.</li>
+                  
                   </ul>
                 </div>
               </div>
@@ -209,6 +234,57 @@ export default function Component() {
             </Link> */}
           </div>
           <div className="grid md:grid-cols-2 gap-6">
+
+          <Link href="https://github.com/jtdoherty/arb-bot" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <img
+          src="arbitrage_opportunities.png"
+          alt="Sports Logic Zone"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">PredictArb</CardTitle>
+        <p className="text-gray-400">
+        An advanced arbitrage trading bot for automatically detecting and exploiting price discrepancies between Polymarket and Kalshi prediction markets.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Python</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Websockets</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
+  <Link href="https://sportslogiczone.vercel.app/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
+    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
+      <CardHeader>
+        <Image
+          src="SportLogicZone.svg"
+          alt="Sports Logic Zone"
+          width={400}
+          height={200}
+          className="rounded-lg object-cover w-full"
+        />
+      </CardHeader>
+      <CardContent>
+        <CardTitle className="mb-2">SportsLogicZone</CardTitle>
+        <p className="text-gray-400">
+          Created SportsLogicZone, a data-driven platform providing fantasy rankings, arbitrage opportunities, and high EV bets using analytics and modeling.
+        </p>
+      </CardContent>
+      <CardFooter className="flex flex-wrap gap-4">
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">React</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Express</Badge>
+        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">MongoDB</Badge>
+      </CardFooter>
+    </Card>
+  </Link>
+
+
+
           <Link href="https://github.com/jtdoherty/Olympics-ML-Predictions" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
     <Card className="bg-gray-900 border-gray-800 cursor-pointer">
       <CardHeader>
@@ -235,31 +311,9 @@ export default function Component() {
     </Card>
   </Link>
 
-  <Link href="https://sportslogiczone.vercel.app/" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
-    <Card className="bg-gray-900 border-gray-800 cursor-pointer">
-      <CardHeader>
-        <Image
-          src="SportLogicZone.svg"
-          alt="Sports Logic Zone"
-          width={400}
-          height={200}
-          className="rounded-lg object-cover w-full"
-        />
-      </CardHeader>
-      <CardContent>
-        <CardTitle className="mb-2">SportsLogicZone</CardTitle>
-        <p className="text-gray-400">
-          Created SportsLogicZone, a data-driven platform providing fantasy rankings, arbitrage opportunities, and high EV bets using analytics and modeling.
-        </p>
-      </CardContent>
-      <CardFooter className="flex flex-wrap gap-4">
-        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">React</Badge>
-        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">Express</Badge>
-        <Badge variant="outline" className="text-gray-800 border-gray-300 bg-gray-100">MongoDB</Badge>
-      </CardFooter>
-    </Card>
-  </Link>
 
+
+  
   <Link href="https://github.com/jtdoherty/MSFT-Machine-Learning" className="hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" passHref>
     <Card className="bg-gray-900 border-gray-800 cursor-pointer">
       <CardHeader>
@@ -324,7 +378,7 @@ export default function Component() {
         <div className="max-w-4xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center">
           <div className="text-center md:text-left mb-4 md:mb-0">
             <h2 className="text-2xl font-bold mb-2">Jack Doherty</h2>
-            <p className="text-gray-400">Full-stack Developer</p>
+            <p className="text-gray-400">Software Engineer</p>
           </div>
           <div className="flex gap-4">
             <Link href="#" className="hover:text-primary transition-colors">
